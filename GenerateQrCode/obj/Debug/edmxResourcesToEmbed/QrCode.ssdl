@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QrCodeDbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblGenerateQrCode">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="QRCodeText" Type="nvarchar" MaxLength="500" />
+    <Property Name="QRCodeImagePath" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityContainer Name="QrCodeDbModelStoreContainer">
+    <EntitySet Name="tblGenerateQrCode" EntityType="Self.tblGenerateQrCode" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

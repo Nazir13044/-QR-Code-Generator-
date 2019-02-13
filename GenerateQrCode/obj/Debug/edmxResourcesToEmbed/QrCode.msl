@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="QrCodeDbModelStoreContainer" CdmEntityContainer="QrCodeDbEntities">
+    <EntitySetMapping Name="tblGenerateQrCode">
+      <EntityTypeMapping TypeName="QrCodeDbModel.tblGenerateQrCode">
+        <MappingFragment StoreEntitySet="tblGenerateQrCode">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="QRCodeText" ColumnName="QRCodeText" />
+          <ScalarProperty Name="QRCodeImagePath" ColumnName="QRCodeImagePath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
